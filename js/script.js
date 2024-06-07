@@ -1,4 +1,4 @@
-function menu() {
+/*function menu() {
   let open = document.querySelector(".menu_open");
   let menu = document.getElementById("container_menu");
   open.addEventListener("click", () => {
@@ -24,7 +24,7 @@ function menu() {
     });
   });
 }
-menu();
+menu();*/
 
 const animations = document.querySelectorAll("[data-animation]");
 const animationClass = "animate";
@@ -46,3 +46,31 @@ function animation_scroll() {
 if (animations.length) {
   window.addEventListener("scroll", animation_scroll);
 }
+
+function faq() {
+
+  const quest = document.querySelectorAll(".quest");
+  const aswer = document.querySelectorAll(".aswer");
+
+  for (let i = 0; i < quest.length; i++) {
+     
+      quest[i].addEventListener("click", () => {
+
+          if( quest[i].classList.contains("close") ) {
+              quest[i].classList.toggle("close");
+              aswer[i].classList.toggle("open");
+
+          }else {
+              quest[i].classList.add("close");
+              aswer[i].classList.add("open");
+            
+          }
+
+
+      });
+
+  }
+
+
+}
+faq();
