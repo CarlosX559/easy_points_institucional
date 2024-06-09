@@ -56,13 +56,13 @@ function faq() {
      
       quest[i].addEventListener("click", () => {
 
-          if( quest[i].classList.contains("close") ) {
-              quest[i].classList.toggle("close");
-              aswer[i].classList.toggle("open");
+          if( quest[i].classList.contains("close_faq") ) {
+              quest[i].classList.toggle("close_faq");
+              aswer[i].classList.toggle("open_faq");
 
           }else {
-              quest[i].classList.add("close");
-              aswer[i].classList.add("open");
+              quest[i].classList.add("close_faq");
+              aswer[i].classList.add("open_faq");
             
           }
 

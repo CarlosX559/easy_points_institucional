@@ -983,12 +983,12 @@ header {
 }
 
 
-.aswer.open {
+.aswer.open_faq {
     margin-bottom: 40px;
 }
 
 
-.open {
+.open_faq {
     display: flex;
     height: fit-content;
     max-height: 100% !important;
@@ -1001,7 +1001,7 @@ header {
     border-radius: 1.25rem;
 }
 
-.close h2 {
+.close_faq h2 {
     color: #7B23EE;
 }
 
