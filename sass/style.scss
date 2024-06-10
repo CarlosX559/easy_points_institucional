@@ -2142,6 +2142,12 @@ footer {
                 max-width: 500px !important;
             }
 
+            .swiper_1 img {
+                max-width: max-content;
+                width: 100%;
+                height: auto;
+            }
+
             .swiper-button-next,
             .swiper-button-prev {
                 width: 25px;
