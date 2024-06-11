@@ -2844,7 +2844,11 @@ footer {
 
             .swiper-button-next,
             .swiper-button-prev {
-                width: 10px;
+                width: 40px;
+                height: 40px;
+                background-color: #956EB3;
+                border-radius: 100px;
+                padding: 10px 0px;
             }
 
             .swiper-slide {
@@ -2878,7 +2882,7 @@ footer {
                             flex-direction: column;
                             gap: 20px;
                             width: 100%;
-                            max-width: 500px;
+                            max-width: 460px;
 
                             .area_icon_dashboard {
                                 display: flex;
@@ -2900,7 +2904,7 @@ footer {
                                 h2 {
                                     font-size: 4em;
                                     color: #FFFFFF;
-                                    line-height: 120%;
+                                    line-height: 100%;
                                     font-weight: 700;
                                 }
                             }
@@ -2925,4 +2929,228 @@ footer {
 
         }
     }
+}
+
+
+@media(max-width: 1024px) {
+
+
+    .container_campanha {
+        .container_campanha_int {
+            .area_campanha {
+
+                .area_titles_campanha {
+                    .title_campanha {
+                        h2 {
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+
+                .area_video_principal {
+                    .area_icon_float {
+                        .area_info_float_1 {
+                            max-width: 200px;
+                            top: 10%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                        .area_info_float_2 {
+                            max-width: 200px;
+                            top: 40%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                    }
+
+
+                    .area_icon_float_2 {
+                        .area_info_float_3 {
+                            max-width: 200px;
+                            top: 10%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                        .area_info_float_4 {
+                            max-width: 200px;
+                            top: 40%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+
+    .container_dashboard {
+        .container_dashboard_int {
+            padding: 0px 20px;
+
+            .area_dashboard {
+
+                .swiper_1 {
+                    max-width: 700px;
+                    height: 560px;
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        top: 70%;
+                    }
+
+                    .swiper-slide {
+                        .area_slide_dashboard {
+                            flex-direction: column;
+
+                            .area_text_dashboard {
+                                max-width: 528px;
+
+                                .title_dashboard {
+                                    h2 {
+                                        font-size: 3em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+@media(max-width: 480px) {
+
+    .container_campanha {
+        padding: 140px 0px 0px 0px;
+
+        .container_campanha_int {
+            .area_campanha {
+                .area_titles_campanha {
+                    padding: 0px 20px;
+
+                    .title_campanha {
+                        h2 {
+                            font-size: 2.2em;
+                        }
+                    }
+
+                    .sub_title_campanha p {
+                        font-size: 1.2em;
+                    }
+
+                }
+
+                .area_video_principal {
+                    .area_icon_float {
+                        .area_info_float_1 {
+                            max-width: 200px;
+                            top: 10%;
+                            left: 20px;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                        .area_info_float_2 {
+                            max-width: 200px;
+                            top: 60%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                    }
+
+
+                    .area_icon_float_2 {
+                        .area_info_float_3 {
+                            max-width: 200px;
+                            top: 20%;
+                            right: 20px;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+
+                        .area_info_float_4 {
+                            max-width: 200px;
+                            top: 80%;
+
+                            .title_info_float {
+                                h2 {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .container_dashboard {
+        .container_dashboard_int {
+            .area_dashboard {
+                padding: 2rem 2rem;
+
+                .swiper_1 {
+                    height: 450px;
+
+                    .swiper-slide {
+                        .area_slide_dashboard {
+                            justify-content: flex-start;
+                            .area_text_dashboard {
+                                .title_dashboard {
+                                    h2 {
+                                        font-size: 2.2em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }
