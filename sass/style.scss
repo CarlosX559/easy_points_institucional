@@ -2578,8 +2578,10 @@ footer {
             .area_contato {
                 flex-direction: column;
                 padding: 0px 20px;
-                .area_text_contato  {
+
+                .area_text_contato {
                     max-width: 400px;
+
                     .title_contato {
                         h2 {
                             font-size: 5em;
@@ -2589,6 +2591,7 @@ footer {
             }
         }
     }
+
     .container_contato_2 {
         .container_contato_2_int {
             .area_contato {
@@ -2597,6 +2600,329 @@ footer {
             }
         }
     }
-  
 
+
+}
+
+
+.container_campanha {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 140px 0px 60px 0px;
+
+    .container_campanha_int {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        width: 100%;
+
+        .area_campanha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+
+            .area_titles_campanha {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 780px;
+                width: 100%;
+
+                .title_campanha {
+                    h2 {
+                        font-size: 3.3em;
+                        color: var(--color-content-heading);
+                        font-weight: 700;
+                    }
+                }
+
+                .sub_title_campanha {
+                    p {
+                        font-size: 1.4em;
+                        font-weight: 700;
+                        color: var(--color-content-primary);
+                        line-height: 120%;
+                    }
+                }
+            }
+
+            .area_video_principal {
+                display: flex;
+                width: 100%;
+                position: relative;
+                background-image: url(../img_plataforma/assets-hero-mob-plat.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 650px;
+                max-width: 1000px;
+
+                .area_video_principal_int {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    position: relative;
+
+                    .video_principal {
+                        background-color: #000;
+                        border: 6px solid #494545;
+                        padding: .6rem;
+                        border-radius: 20px;
+                        width: 100%;
+                        max-width: 285px;
+                        max-height: 585px;
+                        height: 100%;
+                        overflow: hidden;
+
+                        video {
+                            position: absolute;
+                            width: 100%;
+                            max-width: 256px;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+
+                        video::-webkit-media-controls-play-button {
+                            display: none !important;
+                        }
+
+                    }
+
+                }
+
+                .area_icon_float {
+
+                    img {
+                        position: absolute;
+                        top: -45px;
+                        left: 10px;
+                        max-width: max-content;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .area_info_float_1 {
+                        position: absolute;
+                        left: 0px;
+                        top: 35%;
+                        border-radius: 6px;
+                        background: #fff;
+                        width: 100%;
+                        max-width: 240px;
+                        padding: 1rem 1.2rem;
+                        box-shadow: 0 11px 24.5px 0 rgba(15, 19, 31, .08) !important;
+
+                        .title_info_float {
+                            h2 {
+                                font-size: 1.2em;
+                                color: var(--color-content-heading);
+                                line-height: 120%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+
+                    .area_info_float_2 {
+                        position: absolute;
+                        left: 20px;
+                        top: 55%;
+                        border-radius: 6px;
+                        background: #fff;
+                        width: 100%;
+                        max-width: 240px;
+                        padding: 1rem 1.2rem;
+                        box-shadow: 0 11px 24.5px 0 rgba(15, 19, 31, .08) !important;
+
+                        .title_info_float {
+                            h2 {
+                                font-size: 1.2em;
+                                color: var(--color-content-heading);
+                                line-height: 120%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+                .area_icon_float_2 {
+
+                    img {
+                        position: absolute;
+                        top: -45px;
+                        right: 10px;
+                        max-width: max-content;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .area_info_float_3 {
+                        position: absolute;
+                        right: 0px;
+                        top: 35%;
+                        border-radius: 6px;
+                        background: #fff;
+                        width: 100%;
+                        max-width: 240px;
+                        padding: 1rem 1.2rem;
+                        box-shadow: 0 11px 24.5px 0 rgba(15, 19, 31, .08) !important;
+
+                        .title_info_float {
+                            h2 {
+                                font-size: 1.2em;
+                                color: var(--color-content-heading);
+                                line-height: 120%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .area_info_float_4 {
+                        position: absolute;
+                        right: 20px;
+                        top: 55%;
+                        border-radius: 6px;
+                        background: #fff;
+                        width: 100%;
+                        max-width: 240px;
+                        padding: 1rem 1.2rem;
+                        box-shadow: 0 11px 24.5px 0 rgba(15, 19, 31, .08) !important;
+
+                        .title_info_float {
+                            h2 {
+                                font-size: 1.2em;
+                                color: var(--color-content-heading);
+                                line-height: 120%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+
+.container_dashboard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+
+    .container_dashboard_int {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+
+        .area_dashboard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: var(--color-content-primary);
+            padding: 3rem 0rem;
+            border-radius: 40px;
+
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 10px;
+            }
+
+            .swiper-slide {
+                display: flex !important;
+                justify-content: center;
+            }
+
+            .swiper_1 {
+                width: 100%;
+                height: 100%;
+                overflow-y: visible !important;
+
+                .swiper-slide {
+                    .area_slide_dashboard {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 40px;
+                        width: 100%;
+
+                        img {
+                            max-width: max-content;
+                            width: 100%;
+                            height: auto;
+                            border-radius: 20px;
+                        }
+
+                        .area_text_dashboard {
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            gap: 20px;
+                            width: 100%;
+                            max-width: 500px;
+
+                            .area_icon_dashboard {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+
+                                .info_dash {
+                                    p {
+                                        font-size: 1em;
+                                        color: #FFFFFF;
+                                        font-style: italic;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                            }
+
+                            .title_dashboard {
+                                h2 {
+                                    font-size: 4em;
+                                    color: #FFFFFF;
+                                    line-height: 120%;
+                                    font-weight: 700;
+                                }
+                            }
+
+
+                            .sub_title_dashboard {
+                                p {
+                                    font-size: 1.2em;
+                                    color: #ffffffb3;
+                                    line-height: 120%;
+                                    font-weight: 400;
+                                    font-style: italic;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
 }
