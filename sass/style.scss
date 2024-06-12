@@ -49,6 +49,7 @@ header {
     visibility: hidden;
     transition: all ease 200ms;
     cursor: pointer;
+    z-index: 999;
 }
 
 .area_up.active {
