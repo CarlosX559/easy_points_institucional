@@ -96,39 +96,39 @@ function planos() {
     element.addEventListener('click', () => {
       removeActive()
       element.classList.toggle("selected");
-  
+
       switch (key) {
         case 0:
-          usabilidade.forEach((element,key) => {
+          usabilidade.forEach((element, key) => {
             switch (key) {
               case 0:
                 usabilidade[0].classList.add('selected');
                 break;
-            
-                case 1:
-                  usabilidade[1].classList.remove('selected');
+
+              case 1:
+                usabilidade[1].classList.remove('selected');
                 break;
             }
-        });
+          });
           break;
-      
-          case 1:
-            usabilidade.forEach((element,key) => {
-              switch (key) {
-                case 0:
-                  usabilidade[0].classList.remove('selected');
-                  break;
-              
-                  case 1:
-                    usabilidade[1].classList.add('selected');
-                  break;
-              }
+
+        case 1:
+          usabilidade.forEach((element, key) => {
+            switch (key) {
+              case 0:
+                usabilidade[0].classList.remove('selected');
+                break;
+
+              case 1:
+                usabilidade[1].classList.add('selected');
+                break;
+            }
           });
           break;
       }
 
 
-  
+
 
 
     });
@@ -139,3 +139,22 @@ function planos() {
 
 }
 planos();
+
+
+window.addEventListener('scroll', () => {
+  let scroll_top = document.querySelector('.area_up');
+  scroll_top.classList.toggle('active', window.scrollY > 400);
+});
+
+function topScroll() {
+  let scroll_top = document.querySelector('.area_up');
+  scroll_top.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+
+    });
+  
+  });
+}
+topScroll();
