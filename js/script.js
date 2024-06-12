@@ -53,24 +53,89 @@ function faq() {
   const aswer = document.querySelectorAll(".aswer");
 
   for (let i = 0; i < quest.length; i++) {
-     
-      quest[i].addEventListener("click", () => {
 
-          if( quest[i].classList.contains("close_faq") ) {
-              quest[i].classList.toggle("close_faq");
-              aswer[i].classList.toggle("open_faq");
+    quest[i].addEventListener("click", () => {
 
-          }else {
-              quest[i].classList.add("close_faq");
-              aswer[i].classList.add("open_faq");
-            
-          }
+      if (quest[i].classList.contains("close_faq")) {
+        quest[i].classList.toggle("close_faq");
+        aswer[i].classList.toggle("open_faq");
+
+      } else {
+        quest[i].classList.add("close_faq");
+        aswer[i].classList.add("open_faq");
+
+      }
 
 
-      });
+    });
 
   }
 
 
 }
 faq();
+
+const removeActive = () => {
+  //Transformando o nodelist em array
+  const btnActive = [...document.querySelectorAll(".plano_anual.selected")];
+  //map para percorrer
+  btnActive.map((el) => {
+    el.classList.remove("selected");
+  })
+
+}
+
+function planos() {
+
+  let btns_planos = document.querySelectorAll(".plano_anual");
+  let usabilidade = document.querySelectorAll(".area_usabilidade");
+
+
+  btns_planos.forEach((element, key) => {
+
+    element.addEventListener('click', () => {
+      removeActive()
+      element.classList.toggle("selected");
+  
+      switch (key) {
+        case 0:
+          usabilidade.forEach((element,key) => {
+            switch (key) {
+              case 0:
+                usabilidade[0].classList.add('selected');
+                break;
+            
+                case 1:
+                  usabilidade[1].classList.remove('selected');
+                break;
+            }
+        });
+          break;
+      
+          case 1:
+            usabilidade.forEach((element,key) => {
+              switch (key) {
+                case 0:
+                  usabilidade[0].classList.remove('selected');
+                  break;
+              
+                  case 1:
+                    usabilidade[1].classList.add('selected');
+                  break;
+              }
+          });
+          break;
+      }
+
+
+  
+
+
+    });
+
+  });
+
+
+
+}
+planos();
