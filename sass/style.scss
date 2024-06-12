@@ -927,6 +927,7 @@ header {
                     .quest {
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
                         gap: 40px;
                         width: 100%;
                         cursor: pointer;
@@ -941,6 +942,15 @@ header {
                             font-weight: bold;
                             color: #222222;
                             margin: 0px;
+                        }
+
+                        .btn_1 {
+                            max-width: max-content;
+                            height: auto;
+                            width: 100%;
+                            background-color: var(--color-content-primary);
+                            padding: 5px;
+                            border-radius: 10px;
                         }
                     }
 
