@@ -2020,7 +2020,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 140px 0px 60px 0px;
+    height: 66vh;
 
     .container_cases_int {
         display: flex;
@@ -2137,6 +2137,8 @@ footer {
 
 @media(max-width: 480px) {
     .container_cases {
+        padding: 140px 0px 60px 0px;
+        height: auto;
         .container_cases_int {
             .area_container_cases {
                 padding: 0px 20px;
